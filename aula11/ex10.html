@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    <input type="number" name="txt-velocidade" id="txt-velocidade">
+    <input type="button" value="Verificar" id="botao-verificar">
+    <div id="resultado"></div>
+
+    <script>
+        var botaoVerificar = document.querySelector('#botao-verificar')
+
+        botaoVerificar.addEventListener('click', calcular)
+
+        function calcular() {
+        var txtVelocidade = document.querySelector('#txt-velocidade')
+        var resultado = document.querySelector('#resultado')
+        var velocidade = Number(txtVelocidade.value)
+        var velocidadeMaxima = 60
+
+        resultado.innerHTML = `<p> Sua velocidade é de ${velocidade}km/h </p>`
+
+        if (velocidade > velocidadeMaxima){
+            resultado.innerHTML += 'Você ultrapassou a velocidade maxíma e foi MULTADO.'
+        }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gringo ou Br</title>
+</head>
+<body>
+    <h1>Digite seu pais</h1>
+    <select name="pais" id="pais">
+        <option value="Brasil">Brasil</option>
+        <option value="Estados Unidos">Estados Unidos</option>
+        <option value="Mexico">Mexico</option>
+        <option value="Angola">Angola</option>
+        <option value="Portugal">Portugal</option>
+        <option value="Espanha">Espanha</option>
+        <option value="França">França</option>
+
+    </select>
+    <input type="button" id="botao" value="Enviar">
+    <div id="resposta"></div>
+
+    <script>
+        var botao = document.querySelector('#botao')
+        botao.addEventListener('click', clicar)
+
+        function clicar() {
+            var pais = document.querySelector('#pais').value
+            var resposta = document.querySelector('#resposta')
+            var brasil = 'Brasil'
+
+
+            if (pais == brasil) {
+                resposta.innerHTML = '<p> Você é <strong>Brasileiro</strong> parabens!! Você é um lascado</p>'
+            } else {
+                resposta.innerHTML = '<p> Você é <strong>Gringo</strong>, infelizmente não nasceu no Brasil</p>'
+            }
+        }
+    </script>
+</body>
+</html>

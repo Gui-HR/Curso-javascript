@@ -5,20 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Exercício</title>
+    <title>Verificador de Idade</title>
 </head>
 <body>
     <header>
-        <h1>Titulo</h1>
+        <h1>Verificador de Idade</h1>
     </header>
 
     <section>
         <div>
-            
+            <p>Ano que você nasceu:
+                <input type="number" name="ano" id="ano" required min="1900" max="" >
+            </p>
+            <p>Sexo:
+                <label for="masculino">Masculino</label>
+                <input type="radio" name="sexo" id="masculino">
+                <label for="feminino">Feminino</label>
+                <input type="radio" name="sexo" id="feminino" value="Feminino">
+            </p>
+            <input type="button" name="botao" id="botao" value="Verificar">
         </div>
 
-        <div>
-
+        <div id="foto">
+            
         </div>
     </section>
 

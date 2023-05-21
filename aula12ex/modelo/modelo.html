@@ -15,7 +15,7 @@
     <section>
         <div>
             <p>Ano que você nasceu:
-                <input type="number" name="ano" id="ano" required min="1900" max="" >
+                <input type="number" name="string-ano" id="string-ano" required min="1900" max="" >
             </p>
             <p>Sexo:
                 <label for="masculino">Masculino</label>
@@ -23,10 +23,10 @@
                 <label for="feminino">Feminino</label>
                 <input type="radio" name="sexo" id="feminino" value="Feminino">
             </p>
-            <input type="button" name="botao" id="botao" value="Verificar">
+            <input type="button" name="botao" id="botao" value="Verificar" onclick="verificar()">
         </div>
 
-        <div id="foto">
+        <div id="resultado">
             
         </div>
     </section>

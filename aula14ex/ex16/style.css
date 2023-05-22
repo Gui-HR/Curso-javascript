@@ -3,7 +3,6 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    text-align: center;
 }
 
 body {
@@ -14,6 +13,7 @@ body {
 header {
     color: white;
     padding: 20px;
+    text-align: center;
 }
 
 section {
@@ -21,13 +21,35 @@ section {
     border-radius: 10px;
     width: 500px;
     padding: 15px;
-    height: 500px;
     margin: 20px auto;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+section p {
+    margin: 15px;
+}
+
+section input {
+    text-align: center;
+    width: 100px;
+}
+
+section input#fim {
+    margin-left: 17px;
+}
+
+section input#inicio {
+    margin-left: 6px;
+}
+
+section input#botao {
+    margin-left: 15px;
+    padding: 2px;
 }
 
 footer {
     color: white;
     font-style: italic;
+    text-align: center;
 }
 

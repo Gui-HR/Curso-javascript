@@ -8,7 +8,7 @@
 
 body {
     background-color: crimson;
-    font: normal 15px Arial;
+    font: normal 20px Arial;
 }
 
 header {
@@ -20,10 +20,24 @@ section {
     background-color: white;
     border-radius: 10px;
     width: 500px;
-    padding: 15px;
+    padding: 20px;
     height: 500px;
     margin: 20px auto;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#botao {
+    font: normal 20px Arial;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+section p {
+    margin: 20px 0px;
+}
+
+#imagem {
+    border-radius: 100%;
 }
 
 footer {

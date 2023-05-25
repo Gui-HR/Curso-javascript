@@ -33,13 +33,33 @@ function adicionar() {
 }
 
 function mostrar() {
-    if (array.length == 1) {
+    if (array[0] <= 100){
+       if (array.length == 1) {
         resultadoTexto.innerHTML = `<p>Ao todo temos ${array.length} numero cadastrado</p>`
 
-    } else {
-        resultadoTexto.innerHTML = `<p>Ao todo temos ${array.length} numeros cadastrados</p>`
-    }
+        } else {
+            resultadoTexto.innerHTML = `<p>Ao todo temos ${array.length} numeros cadastrados</p>`
+        }
 
- 
-    resultadoTexto.innerHTML += `<p>O menor valor adicionado foi ${array[0]}</p>`
+        var somaArray = 0
+        for (let posicao in array) {
+            somaArray += array[posicao]
+        }
+
+        var maiorNumero = 0
+        var menorNumero = 100
+
+        for (let pos in array) {
+            if (maiorNumero < array[pos]) {
+                maiorNumero = array[pos]
+            } if (menorNumero > array[pos]) {
+                menorNumero = array[pos]
+            }
+        }
+
+        resultadoTexto.innerHTML += `<p>O maior valor adicionado foi ${maiorNumero}</p>`
+        resultadoTexto.innerHTML += `<p>O menor valor adicionado foi ${menorNumero}</p>`
+        resultadoTexto.innerHTML += `<p>A soma de todos os numeros é de ${somaArray}</p>`
+        resultadoTexto.innerHTML += `<p>A media entre os numeros é de ${somaArray / array.length}</p>`
+    }
 }
